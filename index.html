@@ -3,204 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mobile Phones | Educational Website</title>
+  <title>Mobile Phones | Premium Smartphone Store</title>
+  <meta name="description" content="Discover the latest smartphones, compare features, and shop premium mobile phones with a world-class experience." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
+    :root {
+      --primary: #0b1120;
+      --secondary: #1d4ed8;
+      --accent: #06b6d4;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --surface: rgba(255, 255, 255, 0.08);
+      --surface-2: #ffffff;
+      --dark-text: #0f172a;
+      --border: rgba(255,255,255,0.12);
+      --shadow: 0 20px 45px rgba(2, 8, 23, 0.25);
+      --radius: 22px;
+      --gradient: linear-gradient(135deg, #020617 0%, #0f172a 35%, #1d4ed8 100%);
     }
 
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
-      line-height: 1.6;
-      color: #333;
-      background: #f4f7fb;
-    }
-
-    header {
-      background: linear-gradient(135deg, #0d6efd, #0a58ca);
-      color: white;
-      padding: 20px 0;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 15px;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      color: #ffd43b;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 80px 20px;
-      background: white;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 15px;
-      color: #0d6efd;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: auto;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 12px 25px;
-      background: #0d6efd;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #084298;
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    h2 {
-      text-align: center;
-      margin-bottom: 40px;
-      color: #0d6efd;
-      font-size: 2.2rem;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
-    }
-
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-8px);
-    }
-
-    .card h3 {
-      margin-bottom: 15px;
-      color: #0a58ca;
-    }
-
-    .quiz-box {
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      text-align: center;
-      max-width: 700px;
-      margin: auto;
-    }
-
-    .quiz-box button {
-      margin-top: 20px;
-      padding: 12px 20px;
-      border: none;
-      background: #0d6efd;
-      color: white;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-
-    .quiz-box button:hover {
-      background: #084298;
-    }
-
-    footer {
-      background: #0d6efd;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Mobile Phones</h1>
-    <p>Learn Everything About Smartphones and Mobile Technology</p>
-    <nav>
-      <ul>
-        <li><a href="#<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mobile Phones | Home</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
-    }
-
-    body {
-      background: linear-gradient(135deg, #eef4ff, #ffffff);
-      color: #222;
+      font-family: 'Inter', sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
       line-height: 1.6;
     }
 
+    .container {
+      width: min(1200px, 92%);
+      margin: auto;
+    }
+
     header {
-      background: linear-gradient(135deg, #0f172a, #1d4ed8);
+      background: var(--gradient);
       color: white;
-      padding: 20px 50px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      position: relative;
+      overflow: hidden;
     }
 
     nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 1.2rem 0;
     }
 
     .logo {
-      font-size: 2rem;
-      font-weight: bold;
+      font-size: 1.8rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
     }
 
+    .logo span { color: #67e8f9; }
+
     .nav-links {
-      list-style: none;
       display: flex;
-      gap: 30px;
+      gap: 2rem;
+      list-style: none;
     }
 
     .nav-links a {
@@ -210,350 +73,342 @@
       transition: 0.3s;
     }
 
-    .nav-links a:hover {
-      color: #93c5fd;
+    .nav-links a:hover { color: #67e8f9; }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.8rem;
+      cursor: pointer;
     }
 
     .hero {
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       align-items: center;
-      padding: 80px 50px;
-      min-height: 90vh;
+      gap: 3rem;
+      padding: 5rem 0 6rem;
     }
 
-    .hero-text {
-      max-width: 600px;
+    .hero h1 {
+      font-size: clamp(2.5rem, 5vw, 4.5rem);
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
     }
 
-    .hero-text h1 {
-      font-size: 3.5rem;
-      margin-bottom: 20px;
-      color: #0f172a;
+    .hero p {
+      color: var(--text);
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      max-width: 560px;
     }
 
-    .hero-text p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-      color: #475569;
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
     }
 
     .btn {
-      display: inline-block;
-      background: #2563eb;
-      color: white;
-      padding: 15px 30px;
-      border-radius: 50px;
+      padding: 1rem 2rem;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      font-weight: 700;
       text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
+      transition: 0.3s ease;
+      display: inline-block;
     }
 
-    .btn:hover {
-      background: #1d4ed8;
-      transform: translateY(-3px);
-    }
-
-    .hero img {
-      width: 450px;
-      max-width: 100%;
-      animation: float 3s ease-in-out infinite;
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-15px); }
-    }
-
-    .features {
-      padding: 80px 50px;
-      text-align: center;
+    .btn-primary {
       background: white;
+      color: var(--secondary);
     }
 
-    .features h2 {
-      font-size: 2.5rem;
-      margin-bottom: 50px;
-      color: #0f172a;
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow);
     }
 
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
+    .btn-secondary {
+      background: transparent;
+      color: white;
+      border: 1px solid rgba(255,255,255,0.3);
     }
 
-    .feature-card {
-      background: #f8fafc;
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-      transition: transform 0.3s;
+    .hero-card {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 2rem;
+      box-shadow: var(--shadow);
     }
 
-    .feature-card:hover {
-      transform: translateY(-10px);
-    }
-
-    .feature-card h3 {
-      margin: 20px 0 15px;
-      color: #1d4ed8;
-    }
-
-    .products {
-      padding: 80px 50px;
-      background: #eff6ff;
+    .phone-showcase {
+      background: linear-gradient(145deg, #ffffff, #e2e8f0);
+      border-radius: 24px;
+      padding: 2rem;
       text-align: center;
+      color: var(--dark-text);
     }
 
-    .products h2 {
+    .phone-showcase img {
+      width: 100%;
+      max-width: 320px;
+      filter: drop-shadow(0 20px 30px rgba(0,0,0,0.25));
+      transition: transform 0.4s ease;
+    }
+
+    .phone-showcase img:hover {
+      transform: scale(1.05) rotate(-2deg);
+    }
+
+    section {
+      padding: 5rem 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-title h2 {
       font-size: 2.5rem;
-      margin-bottom: 50px;
+      margin-bottom: 0.75rem;
     }
 
-    .product-grid {
+    .section-title p {
+      color: #64748b;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .products-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
+      gap: 2rem;
     }
 
     .product-card {
       background: white;
-      border-radius: 20px;
+      border-radius: var(--radius);
       overflow: hidden;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-      transition: 0.3s;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      transition: 0.35s ease;
+      border: 1px solid #e2e8f0;
     }
 
     .product-card:hover {
-      transform: scale(1.03);
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15);
     }
 
-    .product-card img {
-      width: 100%;
-      height: 280px;
-      object-fit: cover;
+    .product-image {
+      background: linear-gradient(135deg, #eff6ff, #ecfeff);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .product-image img {
+      width: 180px;
+      height: auto;
     }
 
     .product-info {
-      padding: 25px;
+      padding: 1.5rem;
     }
 
     .product-info h3 {
-      margin-bottom: 10px;
-      color: #0f172a;
+      margin-bottom: 0.5rem;
+      font-size: 1.35rem;
+    }
+
+    .price {
+      color: var(--secondary);
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin: 1rem 0;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-between;
+      color: #64748b;
+      font-size: 0.95rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .newsletter {
+      background: var(--gradient);
+      color: white;
+      border-radius: 28px;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .newsletter form {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .newsletter input {
+      padding: 1rem 1.2rem;
+      width: 320px;
+      border: none;
+      border-radius: 999px;
+      outline: none;
     }
 
     footer {
-      background: #0f172a;
-      color: white;
+      background: #020617;
+      color: #cbd5e1;
       text-align: center;
-      padding: 30px;
+      padding: 2rem 0;
     }
 
-    #scrollTop {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #2563eb;
-      color: white;
-      border: none;
-      padding: 15px;
-      border-radius: 50%;
-      cursor: pointer;
-      display: none;
-      font-size: 18px;
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 4%;
+        width: 260px;
+        background: rgba(15, 23, 42, 0.98);
+        flex-direction: column;
+        padding: 1.5rem;
+        border-radius: 16px;
+      }
+
+      .nav-links.active { display: flex; }
+      .menu-toggle { display: block; }
+      .hero { grid-template-columns: 1fr; text-align: center; }
+      .hero-buttons { justify-content: center; }
     }
   </style>
 </head>
 <body>
   <header>
-    <nav>
-      <div class="logo">📱 Mobile Phones</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav>
+        <div class="logo">Mobile<span>Phones</span></div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="menuToggle">☰</div>
+      </nav>
+
+      <div class="hero">
+        <div>
+          <h1>Discover the Future of Mobile Innovation</h1>
+          <p>Explore premium smartphones with cutting-edge technology, elegant design, and exceptional performance. Built for a global audience.</p>
+          <div class="hero-buttons">
+            <a href="#products" class="btn btn-primary">Shop Now</a>
+            <a href="#features" class="btn btn-secondary">Learn More</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="phone-showcase">
+            <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97" alt="Premium Smartphone">
+            <h3>Flagship Series 2026</h3>
+            <p>AI Camera • 5G • Ultra Performance</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <section class="hero" id="home">
-    <div class="hero-text">
-      <h1>Discover the Future of Mobile Technology</h1>
-      <p>Explore the latest smartphones, cutting-edge features, and unbeatable prices. Your perfect mobile device is just a click away.</p>
-      <a href="#products" class="btn">Shop Now</a>
-    </div>
-    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" alt="Smartphone" />
-  </section>
+  <section id="products">
+    <div class="container">
+      <div class="section-title">
+        <h2>Featured Smartphones</h2>
+        <p>Carefully selected devices that combine style, speed, and smart innovation.</p>
+      </div>
 
-  <section class="features" id="features">
-    <h2>Why Choose Us?</h2>
-    <div class="feature-grid">
-      <div class="feature-card">
-        <h3>Latest Models</h3>
-        <p>Stay ahead with the newest smartphones from top brands worldwide.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Best Prices</h3>
-        <p>Competitive pricing with exclusive offers and seasonal discounts.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Fast Delivery</h3>
-        <p>Quick and secure delivery right to your doorstep.</p>
-      </div>
-      <div class="feature-card">
-        <h3>24/7 Support</h3>
-        <p>Our expert team is always ready to assist you anytime.</p>
-      </div>
+      <div class="products-grid" id="productGrid"></div>
     </div>
   </section>
 
-  <section class="products" id="products">
-    <h2>Featured Smartphones</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97" alt="Premium Phone" />
-        <div class="product-info">
-          <h3>Premium Series X</h3>
-          <p>Advanced camera, powerful processor, and elegant design.</p>
-        </div>
-      </div>
-      <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5" alt="Smartphone" />
-        <div class="product-info">
-          <h3>Ultra Pro Max</h3>
-          <p>Experience exceptional performance and stunning display quality.</p>
-        </div>
-      </div>
-      <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1580910051074-3eb694886505" alt="Mobile Phone" />
-        <div class="product-info">
-          <h3>NextGen 5G</h3>
-          <p>Lightning-fast connectivity with long-lasting battery life.</p>
-        </div>
+  <section id="features">
+    <div class="container">
+      <div class="newsletter">
+        <h2>Stay Updated with the Latest Releases</h2>
+        <p>Get exclusive offers, product launches, and expert insights delivered to your inbox.</p>
+        <form id="subscribeForm">
+          <input type="email" id="email" placeholder="Enter your email address" required>
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+        <p id="message" style="margin-top:1rem;"></p>
       </div>
     </div>
   </section>
 
   <footer id="contact">
-    <p>&copy; 2026 Mobile Phones. All Rights Reserved.</p>
-    <p>Your Trusted Destination for Smartphones.</p>
+    <div class="container">
+      <p>© 2026 Mobile Phones. All Rights Reserved. Designed for a Global Audience.</p>
+    </div>
   </footer>
 
-  <button id="scrollTop">↑</button>
-
   <script>
-    const scrollBtn = document.getElementById('scrollTop');
-
-    window.onscroll = function() {
-      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        scrollBtn.style.display = 'block';
-      } else {
-        scrollBtn.style.display = 'none';
+    const products = [
+      {
+        name: 'Galaxy Ultra X',
+        price: '$999',
+        image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9',
+        display: '6.8" AMOLED',
+        storage: '256GB'
+      },
+      {
+        name: 'iPhone Pro Max',
+        price: '$1,199',
+        image: 'https://images.unsplash.com/photo-1592750475338-74b7b21085ab',
+        display: '6.7" OLED',
+        storage: '512GB'
+      },
+      {
+        name: 'Pixel Vision Pro',
+        price: '$899',
+        image: 'https://images.unsplash.com/photo-1580910051074-3eb694886505',
+        display: '6.6" LTPO',
+        storage: '256GB'
       }
-    };
+    ];
 
-    scrollBtn.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+    const productGrid = document.getElementById('productGrid');
+
+    products.forEach(product => {
+      productGrid.innerHTML += `
+        <div class="product-card">
+          <div class="product-image">
+            <img src="${product.image}" alt="${product.name}">
+          </div>
+          <div class="product-info">
+            <h3>${product.name}</h3>
+            <div class="price">${product.price}</div>
+            <div class="features">
+              <span>${product.display}</span>
+              <span>${product.storage}</span>
+            </div>
+            <a href="#" class="btn btn-primary">View Details</a>
+          </div>
+        </div>`;
     });
 
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
+    document.getElementById('menuToggle').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('active');
     });
-  </script>
-</body>
-</html>
-">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#topics">Topics</a></li>
-        <li><a href="#quiz">Quiz</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section id="home" class="hero">
-    <h1>Welcome to Mobile Phones</h1>
-    <p>Your complete educational platform to learn about mobile phones, smartphone technology, operating systems, apps, security, and future innovations.</p>
-    <a href="#topics" class="btn">Start Learning</a>
-  </section>
-
-  <section id="about">
-    <h2>About This Website</h2>
-    <p style="text-align:center; max-width:900px; margin:auto;">Mobile Phones is an educational website designed for students, technology enthusiasts, and beginners who want to understand the world of smartphones. From hardware components to software applications, this platform provides easy-to-understand learning resources.</p>
-  </section>
-
-  <section id="topics">
-    <h2>Learning Topics</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Mobile Hardware</h3>
-        <p>Learn about processors, RAM, batteries, cameras, displays, and internal smartphone components.</p>
-      </div>
-      <div class="card">
-        <h3>Operating Systems</h3>
-        <p>Understand Android, iOS, their features, differences, and how they power modern devices.</p>
-      </div>
-      <div class="card">
-        <h3>Mobile Applications</h3>
-        <p>Explore apps, app categories, installation methods, and their role in everyday life.</p>
-      </div>
-      <div class="card">
-        <h3>Mobile Security</h3>
-        <p>Discover how to protect smartphones from malware, hacking, and privacy threats.</p>
-      </div>
-      <div class="card">
-        <h3>Internet & Connectivity</h3>
-        <p>Learn about Wi-Fi, Bluetooth, 4G, 5G, NFC, and mobile communication technologies.</p>
-      </div>
-      <div class="card">
-        <h3>Future of Mobile Technology</h3>
-        <p>Explore AI, foldable phones, augmented reality, and the next generation of smart devices.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="quiz">
-    <h2>Quick Quiz</h2>
-    <div class="quiz-box">
-      <h3 id="question">Which operating system is developed by Google?</h3>
-      <button onclick="showAnswer()">Show Answer</button>
-      <p id="answer" style="margin-top:20px; font-weight:bold;"></p>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <div class="quiz-box">
-      <p>Email: info@mobilephones.com</p>
-      <p>Website: www.mobilephones.com</p>
-      <p>Follow us for more educational content about mobile technology.</p>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2026 Mobile Phones. All Rights Reserved.</p>
-  </footer>
-
-  <script>
-    function showAnswer() {
-      document.getElementById('answer').innerText = 'Answer: Android';
-    }
-
-    document.querySelectorAll('nav a').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
+    document.getElementById('subscribeForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+      document.getElementById('message').textContent = `Thank you! ${email} has been subscribed.`;
+      this.reset();
     });
   </script>
 </body>
